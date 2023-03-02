@@ -22,7 +22,7 @@ router.post('/', async (req, res) => {
             from: process.env.GMAIL,
             to: EmailAddress,
             subject: `Hotel recomendations for your happy journey in ${Location}`,
-            html: "<h1>Check out this cool hotels in your location </h1><br/><img src='cid:unique-image-id'><br/><img src='cid:unique-image-id1'><br/><p>And visit my website:</p><a href='http://localhost:3000/hotels'>Udchalein</a>",
+            html: "<h1>Check out this cool hotels in your location </h1><br/><img src='cid:unique-image-id'><br/><img src='cid:unique-image-id1'><br/><p>And visit my website:</p><a href='https://innerve7-client.vercel.app/'>Udchalein</a>",
             attachments: [
                 {
                     filename: "hotel.jpg",
