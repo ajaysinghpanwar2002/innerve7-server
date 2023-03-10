@@ -66,7 +66,7 @@ router.post('/payment', async (req, res) => {
             from: process.env.GMAIL,
             to: EmailAddress,
             subject: "Payment request via Stripe",
-            html: `<p>Here is your Stripe payment link:<p/><a href='https://buy.stripe.com/test_28o2as8IGeFK2Fa288'>Stripe Payment link</a><br/> Your total bill is ${Price}`,
+            html: `<p>Here is your Stripe payment link:<p/><a href='https://buy.stripe.com/test_3cs6qI5wu7didjO9AB'>Stripe Payment link</a><br/> Your total bill is ${Price}`,
         }
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
